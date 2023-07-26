@@ -71,15 +71,9 @@ li {
 }
 
 a {
-    /*text-decoration: none;*/
+    text-decoration: none;
     margin: 15px auto;
     color: white;
-}
-
-
-a:hover {
-    color: rgb(53, 171, 187);
-    text-decoration: underline;
 }
 
 
@@ -101,6 +95,7 @@ main {
 }
 
 @media screen and (min-width: 1024px){
+    
     .textos {
         margin: auto;
         width: 75%;
@@ -116,7 +111,8 @@ main {
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
         width: 75%;
-        max-width: 1500px;
+        height: 1650px;
+        /*max-width: 1500px;*/
         display: flex;
         margin: 20px auto;
         margin-top: 0px;
@@ -126,11 +122,10 @@ main {
     }
 
     .img-container {
-        width: 100%;
-        max-width: 350px;
-        height: 530px;
+        width: 98%;
+        /*max-width: 1000px;*/
+        
         margin: 0px auto;
-        /*background: rgba(0, 0, 0, 0.5);*/
         display: grid;
         justify-items: start;
         grid-template-columns: auto;
@@ -152,7 +147,7 @@ main {
     
     
     a:hover {
-        color: rgb(53, 171, 187);
+        color: rgb(54, 144, 96);
         text-decoration: underline;
     }
     
@@ -163,7 +158,7 @@ main {
 
     .textos {
         margin: auto;
-        width: 80%;
+        width: 100%;
         margin-top: 60px;
     }
     main {
@@ -174,12 +169,14 @@ main {
     }
 
     .container{
-        width: auto;
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
         position: relative;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
         margin-top: -10px;
     }
     
@@ -187,7 +184,7 @@ main {
         display: grid;
         justify-items: center;
         width: 80%;
-        height: 450px;
+        height: 350px;
         margin: 10px auto;
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
@@ -196,18 +193,16 @@ main {
 
     img {
         display: block;
-        width: 70%;
+        width: 100%;
         margin: auto;
     }
 }
-
-
 
 @media screen and (min-width: 601px) and (max-width:1023px){
     .textos {
         margin: auto;
         width: 80%;
-        margin-top: 30px;
+        margin-top: 40px;
     }
     main {
        
@@ -221,27 +216,142 @@ main {
     }
 
     .container{
-        width: 100%;
+        width: 80%;
+        height: 1500px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         justify-items: center;
         position: relative;
-        margin-top: -1.3%;
+        margin-top: 20px;
+        margin: 15px auto;
     }
 
     .img-container{
         display: grid;
         justify-items: center;
-        width: 80%;
-        height: 500px;
-        background: rgba(0, 0, 0, 0.5);
-        color: #fff;
-        padding: 15px;
-        margin: 10px auto;
+        width: 100%;
+        padding: 20px;
+
     }
 
     img {
-        width: 300px;
+        width: 100%;
     }
 }
+#contenedor{
+    margin: 40px;
+    color:rgb(245, 242, 226);
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 4.1rem;
+    padding: 0.8rem;
+}
+textarea {
+    height: 2rem;
+    font-size: 1.5rem solid;
+    margin-top: 1rem;
+    background-color: white;
+}
+#fecha {
+    background-color: white;
+}
+
+input[type="text"] {
+    background-color: white;
+}
+
+input[type="email"] {
+    background-color: white;
+}
+#telefono {
+    background-color: white;
+}
+input {
+    height: 3rem;
+    font-size: 1.7rem solid;
+    margin-top: 1.1rem;
+}
+#completo {
+     width:17px;
+     height:17px;	
+     margin-top: 3px;
+}
+.catering {
+    border: 7px solid rgb(235, 227, 13);
+    background-color: rgb(37, 218, 31);
+    color:white;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.35);
+}
+.catering p {
+    font-size: 1.75em;
+}
+.boton{
+    background-color: rgb(19, 174, 57);
+}
+.boton:link{
+    text-decoration: none;
+}
+.boton:hover {
+    background-color: rgb(9, 195, 55);
+    cursor: pointer;
+}
+.botonCompletar{
+    float:right;
+    background-color: rgb(10, 160, 47);
+}
+.botonCompletar:link{
+    text-decoration: none;
+}
+.botonCompletar:hover {
+    background-color: rgb(9, 195, 55);
+    cursor: pointer;
+}
+.botonBorrar{
+    float:right;
+    background-color: rgb(162, 153, 141);
+}
+.botonBorrar:link{
+    text-decoration: none;
+}
+.botonBorrar:hover {
+    background-color: rgb(187, 171, 148);
+    cursor: pointer;
+}
+.caja {
+    overflow: hidden;
+    position:relative; 
+}
+select {
+    background: transparent;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: right center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+.caja::after{
+     content:"\025bc";
+     padding-top:5px;
+     width:33px;
+     height:33px;
+     background-color:white;
+     color:rgb(84, 84, 81);
+     position:absolute;
+     right:3px;	
+     pointer-events: none;
+     margin-top: 3px;
+     padding: 6px;
+ }
+
+.premio {
+    color: gold;
+ }
