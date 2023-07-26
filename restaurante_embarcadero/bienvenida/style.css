@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /*display: flex;*/
+    justify-content: flex-end;
+    font-family: cursive;
+    background-color: rgb(9, 158, 196);
+    font-size: 1.5em;
+
+}
+
+a {
+    text-decoration: none;
+    margin: 15px auto;
+    color: white;
+}
+
+.textos {
+    margin: auto;
+    width: 50%;
+    margin-top: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 30px;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .textos {
+        margin: auto;
+        width: 75%;
+        margin-top: 35px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    a {
+        /*text-decoration: none;*/
+        margin: 15px auto;
+        color: white;
+    }
+    
+    
+    a:hover {
+        color: rgb(54, 144, 96);
+        text-decoration: underline;
+    }
+    
+    .textos {
+        margin: auto;
+        width: 100%;
+        margin-top: 60px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width:1023px){
+    .textos {
+        margin: auto;
+        width: 80%;
+        margin-top: 40px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 30px;
+    }
+}
+
+.boton{
+    background-color: rgb(19, 174, 57);
+}
+.boton:link{
+    text-decoration: none;
+}
+.boton:hover {
+    background-color: rgb(9, 195, 55);
+    cursor: pointer;
+}
+.botonCompletar{
+    float:right;
+    background-color: rgb(10, 160, 47);
+}
+.botonCompletar:link{
+    text-decoration: none;
+}
+.botonCompletar:hover {
+    background-color: rgb(9, 195, 55);
+    cursor: pointer;
+}
